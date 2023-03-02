@@ -7,7 +7,7 @@ const loader = new RGBELoader();
 export class Background {
   async load() {
     const texture = await loader.loadAsync(
-      "src/assets/hdr/HDR_029_Sky_Cloudy_Ref.hdr"
+      "hdr/background.hdr"
     );
 
     texture.mapping = THREE.EquirectangularReflectionMapping;
