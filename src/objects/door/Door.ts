@@ -16,7 +16,7 @@ export class Door {
   ) {}
 
   async load() {
-    const gltf = await loader.loadAsync("src/assets/gltf/door.gltf");
+    const gltf = await loader.loadAsync("gltf/door.gltf");
 
     for (const child of gltf.scene.children) {
       child.castShadow = true;

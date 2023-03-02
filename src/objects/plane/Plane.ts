@@ -3,7 +3,7 @@ import { degToRad } from "three/src/math/MathUtils";
 
 export class Plane {
   async load() {
-    const texture = await new THREE.TextureLoader().loadAsync( "src/assets/textures/plane.png" );
+    const texture = await new THREE.TextureLoader().loadAsync( "textures/plane.png" );
     texture.wrapS = THREE.RepeatWrapping;
     texture.wrapT = THREE.RepeatWrapping;
     texture.repeat.set( 8, 8 );
